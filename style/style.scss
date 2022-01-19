@@ -18,6 +18,12 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 3px 3px 5px 1px rgb(109, 109, 109);
+
   div.logo {
     display: flex;
     align-items: center;
@@ -191,6 +197,27 @@ footer {
       }
     }
   }
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(43, 200, 221);
 }
 
 @media screen and (max-width: 550px) {

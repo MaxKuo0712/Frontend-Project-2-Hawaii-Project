@@ -25,6 +25,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px #6d6d6d;
+          box-shadow: 3px 3px 5px 1px #6d6d6d;
 }
 
 header div.logo {
@@ -252,6 +259,27 @@ footer section.links a {
 footer section.links a img {
   width: 4vw;
   height: 4vw;
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2bc8dd;
 }
 
 @media screen and (max-width: 550px) {
